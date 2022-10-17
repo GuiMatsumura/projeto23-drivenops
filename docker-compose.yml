@@ -26,7 +26,7 @@ services:
     build: ./front-end
     image: react_students_image
     volumes:
-      - build_react:var/www/html
+      - build_react:/var/www/html
 
   nginx_students:
     container_name: nginx_students_container
